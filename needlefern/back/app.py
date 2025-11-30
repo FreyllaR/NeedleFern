@@ -138,4 +138,4 @@ async def submit_order(order: OrderData):
 
 
 if __name__ == "__main__":
-    uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("app:app", host="192.168.1.9", port=8000, reload=True)
