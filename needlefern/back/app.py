@@ -46,7 +46,7 @@ def get_products_from_db_mock() -> List[Dict[str, Any]]:
             "price": "3.60",
             "currency": "USD",
             "url": "https://www.etsy.com/listing/snowman-pattern-mock",
-            "images": ["snowman.png"],
+            "images": ["assets/snowman.png"],
             "quantity": 9999,
             "description": "A charming cross stitch and knitting pattern featuring a happy snowman, perfect for winter holidays. Easy difficulty level.",
         },
@@ -56,7 +56,7 @@ def get_products_from_db_mock() -> List[Dict[str, Any]]:
             "price": "4.20",
             "currency": "USD",
             "url": "https://www.etsy.com/listing/airplane-pattern-mock",
-            "images": ["airflot.png"],
+            "images": ["assets/airflot.png"],
             "quantity": 9999,
             "description": "A complex and detailed vintage airplane pattern. Suitable for experienced crafters. A wonderful gift for aviation enthusiasts.",
         },
@@ -66,7 +66,7 @@ def get_products_from_db_mock() -> List[Dict[str, Any]]:
             "price": "3.60",
             "currency": "USD",
             "url": "https://www.etsy.com/listing/bell-pattern-mock",
-            "images": ["bell.png"],
+            "images": ["assets/bell.png"],
             "quantity": 50,
             "description": "A simple and elegant Christmas bell pattern. Ideal for decorating cards and small gifts.",
         },
@@ -76,7 +76,7 @@ def get_products_from_db_mock() -> List[Dict[str, Any]]:
             "price": "3.60",
             "currency": "USD",
             "url": "https://www.etsy.com/listing/sleigh-pattern-mock",
-            "images": ["moon.png"],
+            "images": ["assets/moon.png"],
             "quantity": 9999,
             "description": "A cross-stitch pattern depicting Santa's sleigh. A festive design to create a holiday mood.",
         },
@@ -138,4 +138,4 @@ async def submit_order(order: OrderData):
 
 
 if __name__ == "__main__":
-    uvicorn.run("app:app", host="192.168.1.9", port=8000, reload=True)
+    uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)
